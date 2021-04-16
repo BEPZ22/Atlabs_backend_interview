@@ -1,3 +1,3 @@
 module.exports = (error) => {
-    return { error: "Unknown", message: "An intern error has ocurred" }
+    return { error: "Unknown", message: "Hubo un error interno" }
 }
