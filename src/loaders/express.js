@@ -3,7 +3,7 @@ const routes = require('../api')
 
 module.exports = async(app) => {
 
-    //Enable CORS requests
+    /** Enable CORS requests */
     app.use((req, res, next) => {
             res.header("Access-Control-Allow-Origin", "*");
             res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, X-HTTP-Method-Override");
@@ -12,8 +12,13 @@ module.exports = async(app) => {
             next();
         })
 
+    /** Delay between 0 to 5000 the response */
+    app.use( ( req, res, next ) => {
+        setTimeout(next, Math.floor( ( Math.random() * 5000 ) + 0 ) );
+    });
+
     app.use(bodyParser.urlencoded({ extended: true }));
     app.use(routes());
-    // Return the express app
+    
     return app;
 }

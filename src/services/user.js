@@ -5,7 +5,7 @@ module.exports = {
     user : async( userID, res )=>{
         try {
             if (userID.charAt(0) != 'A'){
-                return userID + new Date(new Date().toUTCString());
+                return userID + "_" + new Date( new Date() ).toISOString();
             }
         } catch (error) {
             err = error_handler(error)
