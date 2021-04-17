@@ -1,16 +1,13 @@
 var chai = require('chai'), chaiHttp = require('chai-http');
 chai.use(chaiHttp)
-// const fetch = require('node-fetch');
 const expect = chai.expect;
-const should = chai.should;
+
 /** Services */
-const authentication = require('../services/authetication')
-const user = require('../services/user')
+const authentication = require('../services/2_3_exercise/authetication')
+const user = require('../services/2_3_exercise/user')
 
-/** Api */
-const simpleAsyncTokenServiceEndPoint = require('../api/routes/simpleAsyncTokenService')
-
-const url = `localhost:3001`
+const config = require('../config/config')
+const url = `localhost:${config.port}`
 
 describe('Pruebas tanto de servicios como de la API', () => {
 

@@ -1,6 +1,6 @@
 const app = require('express')
 const bodyParser = require('body-parser');
-const simpleAsyncTokenService = require('../../services/simpleAsyncTokenService');
+const simpleAsyncTokenService = require('../../services/2_3_exercise/simpleAsyncTokenService');
 const route = app.Router();
 
 module.exports = (app) => {

@@ -1,4 +1,4 @@
-const error_handler = require ('../errors/error') 
+const error_handler = require ('../../errors/error') 
 const auth = require('./authetication')
 const userToken = require ('./user')
 
