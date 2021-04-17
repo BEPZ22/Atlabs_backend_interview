@@ -12,3 +12,5 @@
         - Para correr las pruebas unitarias de igual manera debe estar en el directorio a nivel de Atlabs_backend_interview.
             -- Correr el aplicativo desde otra instancia de otra terminal como se menciona al principo de la explicación y en otra instancia correr el comando npm run test (la finalidad de correr el aplicativo es poder realizar las pruebas unitarias al servicio)
 
+    - Agregue una coleccion de postman en el archivo, que contiene el endpoint de prueba
+
