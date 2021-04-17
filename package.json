@@ -1,0 +1,22 @@
+{
+  "name": "atlabs",
+  "version": "1.0.0",
+  "description": "atlabs braulio's backend interview",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha src/test --timeout 10000",
+    "start": "node src/index.js"
+  },
+  "author": "Braulio Picon",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "chai-http": "^4.3.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^8.3.2"
+  }
+}
