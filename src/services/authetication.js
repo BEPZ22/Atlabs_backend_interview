@@ -1,5 +1,4 @@
 const error_handler = require('../errors/error');
-const user = require('./user');
 
 module.exports = {
 
